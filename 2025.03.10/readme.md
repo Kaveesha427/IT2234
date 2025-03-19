@@ -1,1 +1,2 @@
-this is first day folder
+|Code file|Output|
+|---------|------|
