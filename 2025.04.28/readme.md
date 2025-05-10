@@ -2,11 +2,11 @@
 
 (01)Delete the currently selected database.
 
-    <b> db.dropDatabase()</b>
+ <b>db.dropDatabase()</b>
      
 (02)Delete a specific collection in the current database.
 
-    <b> db.sampledata.drop()</b>
+ <b>db.sampledata.drop()</b>
 
    
    ![1,2](https://github.com/user-attachments/assets/2c6f9e91-7ea7-4589-888a-e7411e72395a)
@@ -20,7 +20,7 @@
 
 (04)Retrieve only specific field(name and duration) from all documents in the degrees collection.
 
-<b> db.degrees.find().projection(['name','duration'])</b>
+<b>db.degrees.find().projection(['name','duration'])</b>
 
 
 
@@ -48,10 +48,10 @@
 
 (08)Delete all documents from the degrees collection where the duration field is less than 4.
 
-    <b> db.degrees.deleteMany({duration:{$lt:4}})</b>
+<b> db.degrees.deleteMany({duration:{$lt:4}})</b>
 
-    Retrieves all documents from the degrees collection.
-    <b> db.degrees.find({},{name:1,_id:0}).pretty()</b>
+ Retrieves all documents from the degrees collection.
+ <b> db.degrees.find({},{name:1,_id:0}).pretty()</b>
 
 
      
