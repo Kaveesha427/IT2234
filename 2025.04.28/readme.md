@@ -1,75 +1,87 @@
-![13 1](https://github.com/user-attachments/assets/5a3607e6-7578-40aa-bc34-f359b551ef93)![1](https://github.com/user-attachments/assets/fb920e68-b3f6-4d91-8fc4-95820711bca5)<h1><u><img src="https://img.icons8.com/emoji/24/000000/star-emoji.png" alt="star">Lecture time queries and outputs</u></h1>
+<h1><u><img src="https://img.icons8.com/emoji/24/000000/star-emoji.png" alt="star">Lecture time queries and outputs</u></h1>
 
 (01)Delete the currently selected database.
-     db.dropDatabase()
+
+    <b> db.dropDatabase()</b>
      
 (02)Delete a specific collection in the current database.
-     db.sampledata.drop()
+
+    <b> db.sampledata.drop()</b>
 
    
    ![1,2](https://github.com/user-attachments/assets/2c6f9e91-7ea7-4589-888a-e7411e72395a)
 
 (03)Delete a single document from the degrees collection, based on its _id.
-     db.degrees.deleteOne({_id:ObjectId('681a3cc10b635026ae4a2a1f')})
+
+<b>db.degrees.deleteOne({_id:ObjectId('681a3cc10b635026ae4a2a1f')})</b>
 
      
 ![3](https://github.com/user-attachments/assets/909c717e-c2dc-4fc3-8dc6-40a945386bb2)
 
 (04)Retrieve only specific field(name and duration) from all documents in the degrees collection.
-     db.degrees.find().projection(['name','duration'])
+
+<b> db.degrees.find().projection(['name','duration'])</b>
 
 
 
 ![4](https://github.com/user-attachments/assets/7b72071d-ba50-4edf-8ffb-a5a83527b299)
 
 (05)Retrieve only the name field from all documents in the degrees collection (along with _id by default).
-     db.degrees.find().projection(['name'])
+
+<b> db.degrees.find().projection(['name'])</b>
 
 
 (06)Retrieve only the _id field from all documents in the degrees collection.
-     db.degrees.find().projection([{'name':1},{'_id':-1}])
+
+<b> db.degrees.find().projection([{'name':1},{'_id':-1}])</b>
 
      
 ![6](https://github.com/user-attachments/assets/9353e6c6-5b37-42ef-8e87-c462dfd75171)
 
 (07)Fetch a list of degree names from the degrees collection.
-     db.degrees.find({},{name:1,_id:0}).pretty()
+
+<b>db.degrees.find({},{name:1,_id:0}).pretty()</b>
 
 
      
 ![7](https://github.com/user-attachments/assets/bcf81896-af3c-4bed-86a5-1bf9d07141cf)
 
 (08)Delete all documents from the degrees collection where the duration field is less than 4.
-     db.degrees.deleteMany({duration:{$lt:4}})
+
+    <b> db.degrees.deleteMany({duration:{$lt:4}})</b>
 
     Retrieves all documents from the degrees collection.
-     db.degrees.find({},{name:1,_id:0}).pretty()
+    <b> db.degrees.find({},{name:1,_id:0}).pretty()</b>
 
 
      
 ![8](https://github.com/user-attachments/assets/22dd3597-24c0-42ac-8ae2-d28144d04807)
 
 (09)To update the document with the given _id by setting the name field to 'BIT' and the duration field to 3.
-     db.degrees.updateOne({_id:ObjectId('681ebe8053cbd47ea071ea27')},{$set:{name:'BIT',duration:3}})
- 
-    To fetch and display the document with the specified _id, showing all fields and values for that specific degree record.
-     db.degrees.findOne({_id: ObjectId('681ebe8053cbd47ea071ea27')})
 
-     ![9](https://github.com/user-attachments/assets/82aaec67-b9a0-47b4-90b8-3a04c25f77f5)
+<b> db.degrees.updateOne({_id:ObjectId('681ebe8053cbd47ea071ea27')},{$set:{name:'BIT',duration:3}})</b>
+ 
+ To fetch and display the document with the specified _id, showing all fields and values for that specific degree record.
+    
+<b> db.degrees.findOne({_id: ObjectId('681ebe8053cbd47ea071ea27')})</b>
+
+ ![9](https://github.com/user-attachments/assets/82aaec67-b9a0-47b4-90b8-3a04c25f77f5)
 
 
 (10)To increase the duration by 1 for all degree programs that currently have a duration of 4 years or more.
-     db.degrees.updateMany({duration:{$gte:4}},{$inc:{duration:1}})
+
+<b> db.degrees.updateMany({duration:{$gte:4}},{$inc:{duration:1}})</b>
 	 
-	 db.degrees.find({},{name:1,duration:1})
+<b>db.degrees.find({},{name:1,duration:1})</b>
 
   
 ![10](https://github.com/user-attachments/assets/d805a17d-1a3c-43cd-a6d4-bb7785f084bf)
 
 (11)To add "PHP" to the skills array field for the specific student
-     db.students.updateOne({regno:"2021IT003"},{$push:{skills:"PHP"}})
+
+<b> db.students.updateOne({regno:"2021IT003"},{$push:{skills:"PHP"}})</b>
 	 
-	 db.students.findOne({regno:"2021IT003"})
+<b> db.students.findOne({regno:"2021IT003"})</b>
 
 
 ![11](https://github.com/user-attachments/assets/651a8cdf-d040-4da9-b3f1-cc2f2d304df4)
