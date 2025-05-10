@@ -51,6 +51,7 @@
 <b> db.degrees.deleteMany({duration:{$lt:4}})</b>
 
  Retrieves all documents from the degrees collection.
+ 
  <b> db.degrees.find({},{name:1,_id:0}).pretty()</b>
 
 
