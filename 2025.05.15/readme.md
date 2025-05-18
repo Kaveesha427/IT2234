@@ -22,7 +22,9 @@ collections.
 4. Find the students who are younger than 22 and enrolled after 2020. 
 ![4 0](https://github.com/user-attachments/assets/9f91ed9f-7f22-4abe-87d8-6540ea6dd9a8)
 ![4 1](https://github.com/user-attachments/assets/d1b594c4-cdff-47ae-806b-839b97089b1b)
+
 5. Find all grades for "Alice Johnson". 
+
 ![5](https://github.com/user-attachments/assets/521de2ed-dbeb-4adf-92f9-9536d0fe09a7)
 
 6. Find how many students followed the subject “Mathematics”. 
