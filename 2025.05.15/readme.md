@@ -20,6 +20,7 @@ collections.
 ![Uploading 3.png…]()
 
 4. Find the students who are younger than 22 and enrolled after 2020. 
+
 ![4 0](https://github.com/user-attachments/assets/9f91ed9f-7f22-4abe-87d8-6540ea6dd9a8)
 ![4 1](https://github.com/user-attachments/assets/d1b594c4-cdff-47ae-806b-839b97089b1b)
 
@@ -32,6 +33,7 @@ collections.
 ![6](https://github.com/user-attachments/assets/8792d519-80b0-4ce4-940a-98a0b25aa3d0)
 
 7. Find all students with grades in the term "Fall 2022".
+
 ![7 1](https://github.com/user-attachments/assets/605b40cb-37b7-4c84-8ee0-95790b5aee78)
 ![7 2](https://github.com/user-attachments/assets/cb563c6c-2e75-4496-8909-7337303f7296)
 ![7 3](https://github.com/user-attachments/assets/20acea1f-8e31-4ab6-8858-f1d7540055fb)
