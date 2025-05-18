@@ -17,7 +17,8 @@ collections.
 
 3. Find the female students and only display their name, age and gender. 
 
-![Uploading 3.png…]()
+![3](https://github.com/user-attachments/assets/37e8c736-c3d2-4b07-b7fb-ab0b42eaa61d)
+
 
 4. Find the students who are younger than 22 and enrolled after 2020. 
 
